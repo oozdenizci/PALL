@@ -22,3 +22,8 @@ If you use this code or models in your research and find it helpful, please cite
 ## Acknowledgments
 
 This work was supported by the Graz Center for Machine Learning (GraML). This research was funded in whole or in part by the Austrian Science Fund (FWF) [10.55776/COE12].
+
+Parts of this code repository is based on the following works:
+
+* https://github.com/Cranial-XIX/Continual-Learning-Private-Unlearning
+* https://github.com/ihaeyong/WSN
