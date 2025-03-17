@@ -80,4 +80,4 @@ class Base(nn.Module):
             assert task_id in self.task_status, f"[ERROR] {task_id} was not learned"
             self.task_status[task_id] = "F"
             self.forget(task_id)
-        print('Processed in {} seconds'.format(time.time() - t0))
+        # print('Processed in {} seconds'.format(time.time() - t0))

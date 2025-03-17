@@ -220,13 +220,13 @@ class SubnetVisionTransformer(BaseModel):
         return task_mask
 
     def reinit_scores(self):
-        print("reinitializing scores")
+        # print("reinitializing scores")
         for name, module in self.named_modules():
             if isinstance(module, SubnetLinear) or isinstance(module, SubnetConv2d):
                 module.init_mask_parameters()
 
     def reinit_weights(self, combined_masks):
-        print("reinitializing weights")
+        # print("reinitializing weights")
         for name, module in self.named_modules():
             if isinstance(module, SubnetLinear) or isinstance(module, SubnetConv2d) or isinstance(module, SubnetClassifier):
                 if combined_masks != {}:
